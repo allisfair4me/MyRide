@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:ems="10" 
+        android:hint="Subject"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold">
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/userMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Type your message here" 
+        android:textColor="#FFFFFF"
+        />
+
+    <CheckBox
+        android:id="@+id/complaintCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Check if Complaint"
+        android:textColor="#FFFFFF" 
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Send Message" 
+        android:background="#FF5600"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

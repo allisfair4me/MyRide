@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="100"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="75"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+
+        <EditText
+            android:id="@+id/areaName"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="0.48"
+            android:hint="Enter Area Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/startRide"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="#FF5600"
+            android:text="Start My Ride"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/endRide"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="#FF5600"
+            android:text="End My Ride"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
